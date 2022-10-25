@@ -53,12 +53,14 @@ Rails.application.routes.draw do
 end
 ```
 • The third instructions asks us to add some HTML tags in the web page so that Devise can display notifications like Logged In Successfully etc. to the users. Paste the following two paragraph tags inside the body tag as shown in the code snippet.
+```
 <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
+```
 
 • Now, we have to add some devise specific views to our app. The fourth instruction tells us how to do this. Just execute the following command on the terminal opened in the root directory of our project — ```rails g devise views```
 
